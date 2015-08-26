@@ -10,9 +10,9 @@ module Methods
 	# * weekday  - true only if it is a weekday
 	# * vacation - true only if the student is on vacation
 	#
-def sleep_in?(weekday, vacation)
-	!weekday || vacation
-end
+	def sleep_in?(weekday, vacation)
+		!weekday || vacation
+	end
 
 	# monkey_trouble?
 	#
@@ -27,9 +27,10 @@ end
 	# * b_smile   - true only if monkey b is smiling
 	#
 	# TODO - write monkey_trouble?
-def monkey_trouble?(a_smile, b_smile)
-	a_smile && b_smile || !a_smile && !b_smile
-end
+	def monkey_trouble?(a_smile, b_smile)
+		a_smile && b_smile || !a_smile && !b_smile
+	end
+
 	# sum_double
 	#
 	# Given two int values, return their sum. Unless the two values are the same,
@@ -41,5 +42,12 @@ end
 	# * b - an integer
 	#
 	# TODO - write sum_double
+	def sum_double(a, b)
+		sum = a + b
+		if a == b
+			sum *= 2
+		end
+		sum
+	end
 
 end

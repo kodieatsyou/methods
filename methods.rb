@@ -50,4 +50,12 @@ module Methods
 		sum
 	end
 
+	def diff21(n)
+		sum = 21 - n.abs
+		if n.abs > 21
+			sum = 21 - n.abs
+			sum = sum*2
+		end
+		return sum
+	end
 end
